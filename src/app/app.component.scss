@@ -1,0 +1,46 @@
+.main-div {
+    padding: 1rem !important;
+    .inner-div {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        .menu {
+            grid-column: 1/6;
+            grid-row: 1/3;
+            a {
+                padding: 0.25rem;
+            }
+            .menu-bar {
+                // display: none;
+            }
+            .menu-submenu {
+                height: 100%;
+                width: 100%;
+                ul {
+                    width: 50%;
+                }
+                a {
+                    // width: 50%;
+                }
+                background-color: white;
+            }
+        }
+        .cross-icon {
+            padding-left: 0.5rem;
+        }
+        .generic-house {
+            grid-column: 9/13;
+            grid-row: 1/3;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        // .houses-div {
+        //     grid-row-start: 5;
+        //     .mountain-house {
+                
+        //     }
+        // }
+    }
+}

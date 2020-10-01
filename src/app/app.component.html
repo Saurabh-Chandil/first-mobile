@@ -1,21 +1,39 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container-fluid main-div h-100">
+  <div class="inner-div bg-warning h-100">
+      <div class="menu">
+        <a href="javascript:void(0);" class="icon menu-bar" (click)="barsClicked()" *ngIf="!displayMenu">
+          <i class="fa fa-bars fa-lg"></i>
+        </a>
+        <div class="menu-submenu" *ngIf="displayMenu">
+          <ul class="list-unstyled">
+            <li><a href="#news">Tiles</a></li>
+            <li><a href="#news">Wood</a></li>
+            <li><a href="#news">Paint</a></li>
+            <li><a href="#news">Appliances</a></li>
+          </ul>
+         </div>
+      </div>
+      <div class="cross-icon" *ngIf="displayMenu">
+        <i class="fa fa-times fa-lg" (click)="hideMenu()"></i>
+      </div>
+      <div class="generic-house">
+        <img alt="A Generic House" src="../assets/houses-and-woods/generic-house-image.jpg">
+      </div>
+      <!-- <div class="houses-div"> 
+        <div class="mountain-house">
+          <img alt="The Mountain House" src="../assets/houses-and-woods/mountain-house.jpg">
+        </div>
+        <div class="beach-house">
+          <img alt="The Beach House" src="../assets/houses-and-woods/beach-house.jpg">
+        </div>
+        <div class="forest-house">
+          <img alt="The Forest House" src="../assets/houses-and-woods/forest-house.jpg">
+        </div>
+        <div class="underground-house">
+          <img alt="The Underground House" src="../assets/houses-and-woods/underground-house.jpg">
+        </div>
+      </div> -->
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
 <router-outlet></router-outlet>
