@@ -1,3 +1,13 @@
+.custom-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .main-div {
     padding: 1rem !important;
     .inner-div {
@@ -6,7 +16,6 @@
         grid-template-rows: repeat(10, 1fr);
         .menu {
             grid-column: 1/6;
-            grid-row: 1/3;
             a {
                 padding: 0.25rem;
             }
@@ -19,9 +28,6 @@
                 ul {
                     width: 50%;
                 }
-                a {
-                    // width: 50%;
-                }
                 background-color: white;
             }
         }
@@ -30,17 +36,44 @@
         }
         .generic-house {
             grid-column: 9/13;
-            grid-row: 1/3;
-            img {
-                width: 100%;
-                height: 100%;
-            }
         }
-        // .houses-div {
-        //     grid-row-start: 5;
-        //     .mountain-house {
-                
-        //     }
-        // }
+        .mountain-house {
+            grid-column: 2/6;
+            grid-row: 3/5;
+        }
+        .beach-house {
+            grid-column: 8/12;
+            grid-row: 3/5;
+        }
+        .forest-house {
+            grid-column: 2/6;
+            grid-row: 7/9;
+        }
+        .underground-house {
+            grid-column: 8/12;
+            grid-row: 7/9;
+        }
+    }
+    
+    // wood types
+    .wood-types {
+        .wood-type-heading {
+            grid-column: 1/13;
+            grid-row: 1/2;
+            text-align: center;
+        }
+        .pine-wood {
+            grid-column: 2/6;
+        }
+        .cherry-wood {
+            grid-column: 2/6;
+        }
+        .mahogany-wood {
+            grid-column: 8/12;
+        }
+        .cedar-wood {
+            grid-column: 8/12;
+            grid-row: 2;
+        }
     }
 }
