@@ -99,3 +99,16 @@ img {
         }
     }
 }
+
+// small mobiles and small tablets
+@media screen and (min-width: 335px) {
+    #cherry-wood-img {
+        height: 65%;
+        width: 100%;
+    }
+    .contact-us-form {
+        input {
+            width: 100%;
+        }
+    }
+}
