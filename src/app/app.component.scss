@@ -112,3 +112,23 @@ img {
         }
     }
 }
+
+// large tablet & laptop styles
+@media screen and (min-width: 827px){
+    // .menu > a {
+    //     display: none;
+    // }
+    .generic-house {
+        grid-column: 11/13 !important;
+    }
+    .menu-submenu {
+        background-color: transparent !important;
+        ul li {
+            font-size: larger;
+            display: inline;
+        }
+    }
+    .cross-icon {
+        display: none;
+    }
+}
